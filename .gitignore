@@ -1,0 +1,9 @@
+/.pytest_cache/
+/pytest-cache-files-*/
+/.tmp_pytest/
+/tmp-pytest-*/
+/build/
+/dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
