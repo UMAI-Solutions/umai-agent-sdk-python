@@ -44,6 +44,8 @@ class InputArtifact(BaseModel):
     ] = "CUSTOM"
     name: str | None = None
     payload_summary: str | None = None
+    content: str | None = None
+    content_type: Literal["text", "markdown", "json"] = "text"
     metadata: dict[str, Any] = Field(default_factory=dict)
 
 
@@ -135,4 +137,3 @@ class AgentStep(BaseModel):
     prev_step_hash: str | None = None
     step_hash: str | None = None
     created_at: dt.datetime | None = None
-

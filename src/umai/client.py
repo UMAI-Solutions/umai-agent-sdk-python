@@ -378,6 +378,8 @@ class AgentMesh:
                     "artifact_type": artifact.get("artifact_type", "CUSTOM"),
                     "name": artifact.get("name"),
                     "payload_summary": artifact.get("payload_summary"),
+                    "content": artifact.get("content"),
+                    "content_type": artifact.get("content_type", "text"),
                     "metadata": artifact.get("metadata") or {},
                 }
                 for artifact in (artifacts or [])
